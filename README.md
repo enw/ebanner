@@ -1,6 +1,6 @@
-banner
+ebanner
 ======
-> an ascii banner for command-line and the web
+> make ascii banners from the command-line
 
 ## usage
     ebanner [string]
@@ -18,6 +18,6 @@ HH  HH  IIIIII       ,            w w   RR  RR  LLLLLL  DDDD        ..
 
 ## installation
 
-1. ```git clone http://github.com/enw/banner```
-2. ``cd banner && npm link```
-3. run ``banner``` (see usage)
+1. ```git clone http://github.com/enw/ebanner```
+2. ``cd ebanner && npm link```
+3. run ``ebanner``` (see usage)

@@ -1,7 +1,7 @@
 {
-  "name": "banner",
-  "version": "0.0.1",
-  "description": "print your text as a banner",
+  "name": "ebanner",
+  "version": "0.0.2",
+  "description": "make ascii banners from the command-line",
   "main": ".bin/banner.js",
   "bin": {
     "ebanner": "./bin/banner.js"
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/enw/banner.git"
+    "url": "https://github.com/enw/ebanner.git"
   },
   "keywords": [
     "banner",
@@ -21,8 +21,8 @@
   "author": "Elliot Winard <enw@caveteen.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/enw/banner/issues"
+    "url": "https://github.com/enw/ebanner/issues"
   },
-  "homepage": "https://github.com/enw/banner",
+  "homepage": "https://github.com/enw/ebanner",
   "preferGlobal": "true"
 }
