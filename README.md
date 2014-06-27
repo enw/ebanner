@@ -24,9 +24,11 @@ HH  HH  IIIIII       ,            w w   RR  RR  LLLLLL  DDDD        ..
   printBanner(input[, printfxn]) - uses console.log() or custom printfxn to print banner.  watch out for wrapping!
 ```
 
-## installation to use in a browser
-1. install - ```npm install ebanner```
-2. use
+## installation for nodejs
+
+1. install - ``` npm install ebanner ```
+2. require - ``` require('ebanner') ```
+3. be crative
 
 (using browserify)
 1. install ebanner - ```npm install --save ebanner``` - ```--save``` adds ```ebanner``` to your package.json
