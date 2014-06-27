@@ -16,5 +16,6 @@
 ## installation of browser test
 
 1. ```npm install```
-2. ```npm build``` to build bundle.js
+2. ```npm run build``` to build bundle.js
+(you can ```npm run watch``` if you want the browserified js to update while you edit it)
 3. view test-ebanner.html in browser
