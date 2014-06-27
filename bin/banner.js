@@ -75,11 +75,6 @@ function printBanner(s) {
   };
 };
 
-module.exports = {
-  banner: banner,
-  printBanner: printBanner
-};
-
 // get all printable chars
 function printableChars () {
   var s='';
@@ -89,16 +84,14 @@ for (var i=32; i<128; i++) {
   return s;
 }
 
-// test printableChars
-/*
-var chars = printableChars();
-//console.log(chars);
-printBanner(chars);
-*/
-
-// first app
-printBanner('Hello, World!');
-
 // print from command-line
 var CLIString = process.argv.slice(2).join(" ");
 printBanner(CLIString);
+
+module.exports = {
+  printableChars: printableChars,
+
+  banner: banner,
+  printBanner: printBanner
+
+};
