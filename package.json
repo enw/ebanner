@@ -2,9 +2,9 @@
   "name": "ebanner",
   "version": "0.1.0",
   "description": "make ascii banners from the command-line",
-  "main": ".bin/banner.js",
+  "main": "lib/banner.js",
   "bin": {
-    "ebanner": "./bin/banner.js"
+    "ebanner": "./lib/banner.js"
   },
   "scripts": {
     "test": "node ./test/test-ebanner.js && . ./test/test-ebanner.sh"

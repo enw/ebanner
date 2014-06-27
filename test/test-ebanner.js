@@ -1,4 +1,4 @@
-var B=require('../bin/banner'),
+var B=require('../lib/banner'),
  printableChars= B.printableChars,
  printBanner= B.printBanner;
 
