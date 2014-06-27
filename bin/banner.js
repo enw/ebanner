@@ -17,13 +17,6 @@ var bigLetters = [
                   '                     ##### S   SS  // OO  &  &&         ((         ))  ****    +        ,,            ..  //    00   0   11    22        33     44     55 66  66   77   88  88     99  ;;      ::      <<   ====   >>           @      AA  AA BB  BB CC  CC DD DD  EE     FF     GG   G HH  HH   II   JJ  JJ KK KK  LL     MM   M N   NN OO  OO PP     QQ  Q  RR  RR S   SS   TT   UU  UU   VV     W W   XX X    YY    ZZ     [[      \\      ]]                                                                                                                                                                                                                {{     ||     }}           <     ',
                   '         !!   """"""  # #   SSSS  //  OO   &&& &          ((     ))   * *  *   +         , ------     .. //      0000   1111  222222 33333      44  5555   6666    77     88     99     ;                                  ??    @@@@@ AA  AA BBBBB   CCCC  DDDD   EEEEEE FF      GGGGG HH  HH IIIIII  JJJJ  KK  KK LLLLLL MM   M N    N  OOOO  PP      QQQQQ RR  RR  SSSS    TT    UUUU     V     w w  XX   X   YY   ZZZZZZ  [[[[     \\   ]]]]         ______                                                                                                                                                                                                 {{{{   ||   }}}}            <    '
                   ];
-var SPACE = [
-             '       ',
-             '       ',
-             '       ',
-             '       ',
-             '       '
-             ];
 var UNKNOWN_LETTER = [
                       '       ',
                       ' x x   ',
@@ -51,14 +44,10 @@ function banner(s) {
     end = start + LETTER_WIDTH;
 
     for (var j=0; j<bigLetters.length; j++) {
-      /*
-    if (code == 32) {
-        // handle space
-        ret[j]+=SPACE[j].substring(0,LETTER_WIDTH-1)+SPACER;
-        } else */if (letterIdx < 0 || letterIdx >= letterCount) {
+      if (letterIdx < 0 || letterIdx >= letterCount) {
         // handle characters we don't have
         ret[j]+=UNKNOWN_LETTER[j].substring(0,LETTER_WIDTH-1)+SPACER;
-        //      console.log('no char for code', code, char);
+        console.log('no char for code', code, char);
       } else {
         // handle letters we have
         ret[j]+=bigLetters[j].substring(start,end)+SPACER;

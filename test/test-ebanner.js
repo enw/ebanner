@@ -10,4 +10,6 @@ for (var i=0;i<chars.length;i++) {
   printBanner(chars[i]);
 }
 
+printBanner(chars);
+
 
