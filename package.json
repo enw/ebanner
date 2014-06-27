@@ -1,6 +1,6 @@
 {
   "name": "ebanner",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "make ascii banners from the command-line",
   "main": ".bin/banner.js",
   "bin": {
