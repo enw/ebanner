@@ -12,4 +12,4 @@ for (var i=0;i<chars.length;i++) {
 
 printBanner(chars);
 
-
+printBanner('hello', function(stuff) {console.log('CUSTOM PRINTER',stuff)});
