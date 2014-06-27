@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
-  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}
+  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
                                                                      1         1         1
  3       4         5         6         7         8         9         0         1         2
  2       0         0         0         0         0         0         0         0         0
@@ -11,11 +11,11 @@ var FIRST_PRINTABLE_CODE = 32,
 
 // : ; < = > ? @
 var bigLetters = [
-                  '         !!    "" ""  # #   SSSS  OO  //   &&     ``      ((     ))   * * *    +                             //  0000    11    2222   3333  44  4  555555  66666 777777  8888   9999                                      ???    @@@@   AAAA  BBBBB   CCCC  DDDD   EEEEEE FFFFFF  GGGG  HH  HH IIIIII     JJ KK  KK LL     MM   M NN   N  OOOO  PPPPP   QQQ   RRRRR   SSSS  TTTTTT UU  UU V    VVW     WX   XX Y   YY ZZZZZZ  [[[[ \\       ]]]]     ^          ``     ',
-                  '         !!    "" "" ##### SS   S OO //   &  &     ``   ((         ))  ***     +                            //  0  000  111   2   22     33 44  44 5      66         77 88  88 99  99  ;;      ::      <<   ====   >>    ?  ??  @ @@ @ AA  AA BB  BB CC  CC DD DD  EE     FF     GG     HH  HH   II       JJ KK KK  LL     MMM MM NNN  N OO  OO PP  PP QQ  Q  RR  RR SS   S   TT   UU  UU VV  VV W     W X XX   Y YY     ZZ   [[    \\        ]]    ^ ^          ``    ',
-                  '         !!           # #    SS     //     &&& &    ``  ((         )) ****** +++++      ,, ------          //   0 00 0   11     222    333  4444444 555   66666     77    88     9999                <<              >>    ??   @  @@  AAAAAA BBBBB  CC     DD  DD EEEE   FFFF   GG  GG HHHHHH   II       JJ KKKK   LL     MM M M N NNNN OO  OO PPPPP  QQ  Q  RRRRR    SS     TT   UU  UU  V  V   W W W   XX     YY     ZZ    [[     \\       ]]   ^   ^          ``   ',
-                  '                     ##### S   SS  // OO  &  &&         ((         ))  ****    +        ,,            ..  //    00   0   11    22        33     44     55 66  66   77   88  88     99  ;;      ::      <<   ====   >>           @      AA  AA BB  BB CC  CC DD DD  EE     FF     GG   G HH  HH   II   JJ  JJ KK KK  LL     MM   M N   NN OO  OO PP     QQ  Q  RR  RR S   SS   TT   UU  UU   VV     W W   XX X    YY    ZZ     [[      \\      ]]                       ',
-                  '         !!   """"""  # #   SSSS  //  OO   &&& &          ((     ))   * *  *   +         , ------     .. //      0000   1111  222222 33333      44  5555   6666    77     88     99     ;                                  ??    @@@@@ AA  AA BBBBB   CCCC  DDDD   EEEEEE FF      GGGGG HH  HH IIIIII  JJJJ  KK  KK LLLLLL MM   M N    N  OOOO  PP      QQQQQ RR  RR  SSSS    TT    UUUU     V     w w  XX   X   YY   ZZZZZZ  [[[[     \\   ]]]]         ______        '
+                  '         !!    "" ""  # #   SSSS  OO  //   &&     ``      ((     ))   * * *    +                             //  0000    11    2222   3333  44  4  555555  66666 777777  8888   9999                                      ???    @@@@   AAAA  BBBBB   CCCC  DDDD   EEEEEE FFFFFF  GGGG  HH  HH IIIIII     JJ KK  KK LL     MM   M NN   N  OOOO  PPPPP   QQQ   RRRRR   SSSS  TTTTTT UU  UU V    VVW     WX   XX Y   YY ZZZZZZ  [[[[ \\       ]]]]     ^          ``                                                                                                                                                                                              {{{{   ||   }}}}            <    ',
+                  '         !!    "" "" ##### SS   S OO //   &  &     ``   ((         ))  ***     +                            //  0  000  111   2   22     33 44  44 5      66         77 88  88 99  99  ;;      ::      <<   ====   >>    ?  ??  @ @@ @ AA  AA BB  BB CC  CC DD DD  EE     FF     GG     HH  HH   II       JJ KK KK  LL     MMM MM NNN  N OO  OO PP  PP QQ  Q  RR  RR SS   S   TT   UU  UU VV  VV W     W X XX   Y YY     ZZ   [[    \\        ]]    ^ ^          ``                                                                                                                                                                                             {{     ||     }}    ~~  ~  <     ',
+                  '         !!           # #    SS     //     &&& &    ``  ((         )) ****** +++++      ,, ------          //   0 00 0   11     222    333  4444444 555   66666     77    88     9999                <<              >>    ??   @  @@  AAAAAA BBBBB  CC     DD  DD EEEE   FFFF   GG  GG HHHHHH   II       JJ KKKK   LL     MM M M N NNNN OO  OO PPPPP  QQ  Q  RRRRR    SS     TT   UU  UU  V  V   W W W   XX     YY     ZZ    [[     \\       ]]   ^   ^          ``                                                                                                                                                                                          {{{      ||      }}} ~  ~~  <<<<<< ',
+                  '                     ##### S   SS  // OO  &  &&         ((         ))  ****    +        ,,            ..  //    00   0   11    22        33     44     55 66  66   77   88  88     99  ;;      ::      <<   ====   >>           @      AA  AA BB  BB CC  CC DD DD  EE     FF     GG   G HH  HH   II   JJ  JJ KK KK  LL     MM   M N   NN OO  OO PP     QQ  Q  RR  RR S   SS   TT   UU  UU   VV     W W   XX X    YY    ZZ     [[      \\      ]]                                                                                                                                                                                                                {{     ||     }}           <     ',
+                  '         !!   """"""  # #   SSSS  //  OO   &&& &          ((     ))   * *  *   +         , ------     .. //      0000   1111  222222 33333      44  5555   6666    77     88     99     ;                                  ??    @@@@@ AA  AA BBBBB   CCCC  DDDD   EEEEEE FF      GGGGG HH  HH IIIIII  JJJJ  KK  KK LLLLLL MM   M N    N  OOOO  PP      QQQQQ RR  RR  SSSS    TT    UUUU     V     w w  XX   X   YY   ZZZZZZ  [[[[     \\   ]]]]         ______                                                                                                                                                                                                 {{{{   ||   }}}}            <    '
                   ];
 var SPACE = [
              '       ',
@@ -89,15 +89,15 @@ for (var i=32; i<128; i++) {
   return s;
 }
 
-// printBanner('ABCDEFGHIJKLMNOPQRSTUVWXYZ');
-
-// printBanner('Hello, World!');
-
-// printBanner(': ; < = > ? @');
-
-// printBanner('now is the time.');
+// test printableChars
+/*
 var chars = printableChars();
+//console.log(chars);
 printBanner(chars);
+*/
+
+// first app
+printBanner('Hello, World!');
 
 // print from command-line
 var CLIString = process.argv.slice(2).join(" ");
