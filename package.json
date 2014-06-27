@@ -1,0 +1,28 @@
+{
+  "name": "banner",
+  "version": "0.0.1",
+  "description": "print your text as a banner",
+  "main": ".bin/banner.js",
+  "bin": {
+    "ebanner": "./bin/banner.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/enw/banner.git"
+  },
+  "keywords": [
+    "banner",
+    "text",
+    "command line"
+  ],
+  "author": "Elliot Winard <enw@caveteen.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enw/banner/issues"
+  },
+  "homepage": "https://github.com/enw/banner",
+  "preferGlobal": "true"
+}
