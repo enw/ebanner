@@ -21,3 +21,6 @@ HH  HH  IIIIII       ,            w w   RR  RR  LLLLLL  DDDD        ..
 1. ```git clone http://github.com/enw/ebanner```
 2. ``cd ebanner && npm link```
 3. run ``ebanner``` (see usage)
+
+## testing
+run ``` npm test ```
