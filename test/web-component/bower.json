@@ -1,0 +1,24 @@
+{
+  "name": "ebanner-web-component",
+  "version": "0.4.3",
+  "homepage": "https://github.com/enw/ebanner",
+  "authors": [
+    "Elliot Winard <elliot.winard@frogdesign.com>"
+  ],
+  "main": "component/e-banner.html",
+  "keywords": [
+    "banner"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "~0.3.3"
+  }
+}

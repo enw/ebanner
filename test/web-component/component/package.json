@@ -1,0 +1,16 @@
+{
+  "name": "web-component-test-for-ebanner",
+  "version": "0.0.0",
+  "description": "test ebanner in a webcomponent in a browser",
+  "main": "scripts/browser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify scripts/browser.js -o bundle.js",
+    "watch": "watchify scripts/browser.js -o bundle.js --debug --verbose"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ebanner": "^0.2.3"
+  }
+}
