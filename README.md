@@ -4,6 +4,8 @@ ebanner
 
 ## usage
     ebanner [string]
+    or 
+    echo <string> | ebanner
 
 ## example
 ```
@@ -42,5 +44,12 @@ HH  HH  IIIIII       ,            w w   RR  RR  LLLLLL  DDDD        ..
 2. ``cd ebanner && npm link```
 3. run ``ebanner``` (see usage)
 
+## use in emacs
+
+1. install command-line
+2. select text in emacs
+3. run ```ebanner``` through the shell-command-on-region (M-|) function
+
 ## testing
 run ``` npm test ```
+
